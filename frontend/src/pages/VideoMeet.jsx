@@ -15,8 +15,9 @@ import StopScreenShareIcon from "@mui/icons-material/StopScreenShare";
 import Badge from "@mui/material/Badge";
 import ChatIcon from "@mui/icons-material/Chat";
 import { useNavigate } from "react-router-dom";
+import servers from "../envoirnment";
 
-const server_url = "http://localhost:8000";
+const server_url = servers;
 
 const peerConfigConnections = {
   iceServers: [{ urls: "stun:stun.l.google.com:19302" }],
